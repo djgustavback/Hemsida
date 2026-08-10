@@ -40,7 +40,7 @@ body {
 }
 
 .logo img {
-    height: 35px; /* Ökat från 20px för bättre lagom storlek */
+    height: 45px;
     width: auto;
     display: block;
 }
@@ -75,7 +75,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* Byt ut URL:en nedan mot en länk till din egen DJ-bild! */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516280440502-614f85e48358?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
 }
 
@@ -166,11 +165,11 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Vänsterjustering även på mobila skärmar */
+/* Responsiv anpassning för mobil */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start; /* Vänsterjusterar loggan och menyn */
+        align-items: flex-start;
         padding: 15px 20px;
     }
     .nav-links {
@@ -181,4 +180,121 @@ footer {
     .hero-content h1 {
         font-size: 3rem;
     }
+}
+
+/* ==========================================
+   CSS för Paket och Priser
+   ========================================== */
+.pricing-section {
+  padding: 80px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.pricing-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.pricing-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 40px 30px;
+  flex: 1 1 350px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-card.highlight {
+  border-top: 4px solid #e1b12c;
+}
+
+.package-name {
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.package-name .subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.package-price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: #e1b12c;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.package-features li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 25px;
+  color: #ccc;
+}
+
+.package-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #e1b12c;
+  font-weight: bold;
+}
+
+.book-btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #e1b12c;
+  color: #111;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #f1c40f;
 }
