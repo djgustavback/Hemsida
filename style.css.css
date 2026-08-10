@@ -1,0 +1,176 @@
+/* Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Färgvariabler för enkel ändring */
+:root {
+    --primary-color: #00d2ff; /* Snygg neonblå accentfärg */
+    --bg-color: #0a0a0a;
+    --section-bg: #121212;
+}
+
+/* Meny */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(10, 10, 10, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span, h2 span, h1 span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Sektion (Startsida) */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Byt ut URL:en nedan mot en länk till din egen DJ-bild! */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516280440502-614f85e48358?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Knappar */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+
+/* Sektioner */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.dark-section {
+    background-color: var(--section-bg);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* Musik-platshållare */
+.music-placeholder {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    border: 1px dashed #333;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* Sidfot */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #050505;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Responsiv design för mobiler */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
