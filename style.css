@@ -33,10 +33,11 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 2px;
+/* Nya inställningar för bilden */
+.logo img {
+    height: 40px; /* Justera denna höjd tills du tycker det ser bra ut i menyn */
+    width: auto;  /* Detta gör att bredden anpassas automatiskt så bilden inte blir utdragen */
+    display: block; /* Tar bort eventuellt litet tomrum under bilden */
 }
 
 .logo span, h2 span, h1 span {
