@@ -35,7 +35,7 @@ body {
 
 /* Nya inställningar för bilden */
 .logo img {
-    height: 40px; /* Justera denna höjd tills du tycker det ser bra ut i menyn */
+    height: 20px; /* Justera denna höjd tills du tycker det ser bra ut i menyn */
     width: auto;  /* Detta gör att bredden anpassas automatiskt så bilden inte blir utdragen */
     display: block; /* Tar bort eventuellt litet tomrum under bilden */
 }
