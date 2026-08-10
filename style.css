@@ -33,11 +33,16 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Nya inställningar för bilden */
+/* Justering för logotypen */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 20px; /* Justera denna höjd tills du tycker det ser bra ut i menyn */
-    width: auto;  /* Detta gör att bredden anpassas automatiskt så bilden inte blir utdragen */
-    display: block; /* Tar bort eventuellt litet tomrum under bilden */
+    height: 35px; /* Ökat från 20px för bättre lagom storlek */
+    width: auto;
+    display: block;
 }
 
 .logo span, h2 span, h1 span {
@@ -161,15 +166,17 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsiv design för mobiler */
+/* Vänsterjustering även på mobila skärmar */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 15px;
+        align-items: flex-start; /* Vänsterjusterar loggan och menyn */
+        padding: 15px 20px;
     }
     .nav-links {
         margin-top: 15px;
         gap: 15px;
+        flex-wrap: wrap;
     }
     .hero-content h1 {
         font-size: 3rem;
