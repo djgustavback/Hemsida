@@ -401,3 +401,13 @@ footer {
 .hero-content p a:hover {
     opacity: 0.8;
 }
+/* Länk i startskärmens undertext */
+.hero-content p a.hero-link {
+    color: #00d2ff; /* Skriver ut färgkoden direkt istället för variabeln */
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.hero-content p a.hero-link:hover {
+    color: #ffffff; /* Blir vit när man hovrar */
+}
