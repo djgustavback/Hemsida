@@ -381,3 +381,11 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* Introduktionstext under prisrubriken */
+.pricing-intro {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
