@@ -321,6 +321,7 @@ footer {
     display: block;
     width: 100%;
 }
+
 /* Omdömen-sektion */
 .section-subtitle {
     color: #aaa;
@@ -356,7 +357,7 @@ footer {
 }
 
 .review-text {
-    font-style: normal; /* Ser till att hela stycket inte tvingas bli kursivt */
+    font-style: normal;
     color: #ddd;
     margin-bottom: 20px;
     line-height: 1.6;
@@ -364,7 +365,7 @@ footer {
 }
 
 .quote-italic {
-    font-style: italic; /* Endast själva citattexten blir kursiv */
+    font-style: italic;
 }
 
 .review-author {
