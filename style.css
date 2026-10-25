@@ -356,11 +356,15 @@ footer {
 }
 
 .review-text {
-    font-style: italic;
+    font-style: normal; /* Ser till att hela stycket inte tvingas bli kursivt */
     color: #ddd;
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 1rem;
+}
+
+.quote-italic {
+    font-style: italic; /* Endast själva citattexten blir kursiv */
 }
 
 .review-author {
