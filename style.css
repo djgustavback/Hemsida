@@ -383,9 +383,11 @@ footer {
 }
 /* Introduktionstext under prisrubriken */
 .pricing-intro {
-    text-align: center;
+   text-align: center; /* Tvingar texten att bli centrerad */
     color: #aaa;
     font-size: 1.1rem;
     margin-bottom: 40px;
-    margin-top: -30px;
+    margin-top: -10px; /* Justerat avstånd uppåt */
+    display: block;
+    width: 100%;
 }
