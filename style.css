@@ -391,3 +391,13 @@ footer {
     display: block;
     width: 100%;
 }
+/* Länk i startskärmens undertext */
+.hero-content p a {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.hero-content p a:hover {
+    opacity: 0.8;
+}
